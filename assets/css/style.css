@@ -1,0 +1,258 @@
+body,
+html,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+
+/*----------------------------------------- different sizes of containers */
+
+.container-sm {
+    width: min(550px, 75%);
+}
+
+.container-lg {
+    width: min(800px, 85%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* For applying transition only */
+
+.disappear {
+    transition: transform 500ms linear, opacity 500ms linear;
+}
+
+
+/* Utility Classes */
+
+.medium {
+    font-size: 1rem;
+}
+
+.large {
+    font-size: 1.5rem;
+}
+
+.larger {
+    font-size: 2.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.b-radius-subtle {
+    border-radius: 5px;
+}
+
+.box-shadow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.box-shadow-green {
+    box-shadow: 0 0 15px rgb(5, 247, 5);
+}
+
+.of-v {
+    overflow: visible;
+}
+
+.of-s {
+    overflow: scroll;
+}
+
+.of-h {
+    overflow: hidden;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.dir-row {
+    flex-direction: row;
+}
+
+.dir-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.fb-100 {
+    flex-basis: 100%;
+}
+
+.fb-50 {
+    flex-basis: 50%;
+}
+
+.g-4 {
+    gap: 1.5em;
+}
+
+.resize {
+    resize: vertical;
+}
+
+.stretch {
+    width: 100%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ms-auto {
+    margin-left: auto;
+}
+
+.me-auto {
+    margin-right: auto;
+}
+
+.mi-1 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.my-3 {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.py-2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+
+/* Action related */
+
+.contracted {
+    overflow: hidden;
+    /* Hide the element content, while height = 0 */
+    max-height: 0px;
+    opacity: 0;
+    transition: max-height 700ms, opacity 500ms 0ms;
+}
+
+.contracted.expand {
+    max-height: 10000px;
+    opacity: 1;
+}
+
+
+/* Media Queries */
+
+@media (min-width:600px) {
+    .fb-sm-50 {
+        flex-basis: 50%;
+    }
+    .flex-sm-nowrap {
+        flex-wrap: nowrap;
+    }
+}
+
+
+/* Styling for the button */
+
+.btn {
+    display: block;
+    padding: 0.5em;
+    /* margin: 1em 0;
+   */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "Shippori Antique B1", sans-serif;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 10px;
+}
+
+.btn-blank {
+    display: block;
+    margin-bottom: 1em;
+    border: 0;
+    background-color: transparent;
+    font-family: "Montserrat";
+    font-size: .9rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.btn-lg {
+    font-size: 2rem;
+}
+
+.btn-accent {
+    background: #FFC300;
+    color: black;
+    font-weight: 700;
+}
+
+.btn-accent:active {
+    background: #8a6f06;
+    color: white;
+}
+
+.btn-semi-dark {
+    background: #142044;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-semi-dark:active {
+    background: #274294;
+    color: black;
+}
